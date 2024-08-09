@@ -1,0 +1,21 @@
+{
+  "name": "seo-prerender",
+  "version": "0.0.1",
+  "description": "Service to prerender Javascript rendered pages for SEO",
+  "main": "./src/index.js",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "watch": "nodemon src/index.js",
+    "pm2:dev": "pm2 start ecosystem.config.js --env development",
+    "pm2:prod": "pm2 start ecosystem.config.js --env production",
+    "pm2:reload": "pm2 reload ecosystem.config.js --env production"
+  },
+  "author": "kkk-kppi",
+  "license": "MIT",
+  "dependencies": {
+    "cache-manager": "^4.1.0",
+    "pm2": "^5.4.2",
+    "prerender": "^5.21.5"
+  }
+}
