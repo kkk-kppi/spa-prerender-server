@@ -2,13 +2,13 @@
 
 Prerender is a node server that uses Headless Chrome to render HTML, screenshots, PDFs, and HAR files out of any web page. The Prerender server listens for an http request, takes the URL and loads it in Headless Chrome, waits for the page to finish loading by waiting for the network to be idle, and then returns your content.
 
-## Prerender是给SPA爬虫服务的node服务，用于预渲染，可以解决SPA的SEO问题
+### Prerender是给SPA爬虫服务的node服务，用于预渲染，可以解决SPA的SEO问题
 
-## 本服务是基于prerender的Node服务 + Nginx转发实现，在原本的SPA应用中，启动一个Prerender服务，然后通过Nginx转发到Prerender服务，实现预渲染
+### 本服务是基于prerender的Node服务 + Nginx转发实现，在原本的SPA应用中，启动一个Prerender服务，然后通过Nginx转发到Prerender服务，实现预渲染
 
-## 需要注意，Prerender服务需要安装Headless Chrome，在Windows下，需要安装chromium，在Linux下，需要安装chrome
+### 需要注意，Prerender服务需要安装Headless Chrome，在Windows下，需要安装chromium，在Linux下，需要安装chrome
 
-## 安装好chrome后，需要在src/index.js中配置chromeLocation，指向chrome的安装路径
+### 安装好chrome后，需要在src/index.js中配置chromeLocation，指向chrome的安装路径
 
 ### 使用prerender进行预渲染的node服务
 
